@@ -1,7 +1,7 @@
 # Installation Guide
 #### FIRST OF ALL, AND VERY IMPORTANT: 
 The installation process will only work **IFF** ~/.zsh is empty **AND** ~/.zshrc
-and ~/.zshenv does not exist.  If this is not the case, then be sure to back up
+and ~/.zshenv do not exist.  If this is not the case, then be sure to back up
 your existing zsh configuration files.  This may be done by executing the
 following:
     
