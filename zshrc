@@ -18,7 +18,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -75,15 +76,15 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # Modal marker for the prompt, showing the current vim-style mode
-function zle-line-init zle-keymap-select
-{
-    NORMAL="%{$fg_bold[white]%} [% NORMAL]% %{$reset_color%}"
-    INSERT="%{$fg_bold[yellow]%} [% INSERT]% %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$NORMAL}/(main|viins)/$INSERT}"
-    zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
+# function zle-line-init zle-keymap-select
+# {
+    # NORMAL="%{$fg_bold[white]%} [% NORMAL]% %{$reset_color%}"
+    # INSERT="%{$fg_bold[yellow]%} [% INSERT]% %{$reset_color%}"
+    # RPS1="${${KEYMAP/vicmd/$NORMAL}/(main|viins)/$INSERT}"
+    # zle reset-prompt
+# }
+# zle -N zle-line-init
+# zle -N zle-keymap-select
 
 # Command history lookup
 bindkey "^R" history-incremental-search-backward
@@ -100,7 +101,7 @@ bindkey "^R" history-incremental-search-backward
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a' 
 alias ll='ls -l' 
