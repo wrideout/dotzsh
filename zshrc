@@ -18,7 +18,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -101,7 +102,7 @@ bindkey "^R" history-incremental-search-backward
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a' 
 alias ll='ls -l' 
