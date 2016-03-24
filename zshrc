@@ -59,7 +59,8 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn python safe-paste vi-mode cp extract)
+# plugins=(git svn python safe-paste vi-mode cp extract)
+plugins=(git svn python safe-paste cp extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -69,21 +70,21 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # vim command line editing
-bindkey -v
+# bindkey -v
 
 # Reduce the lag between modes
 export KEYTIMEOUT=1
 
 # Modal marker for the prompt, showing the current vim-style mode
-function zle-line-init zle-keymap-select
-{
-    NORMAL="%{$fg_bold[white]%} [% NORMAL]% %{$reset_color%}"
-    INSERT="%{$fg_bold[yellow]%} [% INSERT]% %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$NORMAL}/(main|viins)/$INSERT}"
-    zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
+# function zle-line-init zle-keymap-select
+# {
+    # NORMAL="%{$fg_bold[white]%} [% NORMAL]% %{$reset_color%}"
+    # INSERT="%{$fg_bold[yellow]%} [% INSERT]% %{$reset_color%}"
+    # RPS1="${${KEYMAP/vicmd/$NORMAL}/(main|viins)/$INSERT}"
+    # zle reset-prompt
+# }
+# zle -N zle-line-init
+# zle -N zle-keymap-select
 
 # Command history lookup
 bindkey "^R" history-incremental-search-backward
