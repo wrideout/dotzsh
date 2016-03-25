@@ -15,7 +15,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Use Antigen
-source ./antigen/antigen.zsh
+source ~/.zsh/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle svn
@@ -25,17 +25,14 @@ antigen bundle cp
 antigen bundle extract
 antigen bundle brew
 antigen bundle osx
-
-
-antigen theme dracula
-
+# antigen theme robbyrussell
 antigen apply
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 # ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
