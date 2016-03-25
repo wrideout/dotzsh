@@ -17,8 +17,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Use Antigen
 source ~/.zsh/antigen/antigen.zsh
 antigen use oh-my-zsh
-antigen bundle git
-antigen bundle svn
 antigen bundle python
 antigen bundle safe-paste
 antigen bundle cp
