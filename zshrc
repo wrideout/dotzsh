@@ -15,23 +15,22 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Use Antigen
-source ~/.zsh/antigen/antigen.zsh
-antigen use oh-my-zsh
-antigen bundle python
-antigen bundle safe-paste
-antigen bundle cp
-antigen bundle extract
-antigen bundle brew
-antigen bundle osx
+# source ~/.zsh/antigen/antigen.zsh
+# antigen use oh-my-zsh
+# antigen bundle python
+# antigen bundle safe-paste
+# antigen bundle cp
+# antigen bundle extract
+# antigen bundle brew
+# antigen bundle osx
 # antigen theme robbyrussell
-antigen apply
+# antigen apply
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
-# ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -72,7 +71,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git svn python safe-paste vi-mode cp extract)
+plugins=(git svn python safe-paste cp extract)
 
 source $ZSH/oh-my-zsh.sh
 
