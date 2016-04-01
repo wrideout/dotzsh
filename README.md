@@ -17,6 +17,10 @@ Execute the following commands in order to install to your ~/.vim file:
     # Create symlinks
     $ ln -s ~/.zsh/zshrc ~/.zshrc
     $ ln -s ~/.zsh/zshenv ~/.zshenv
+
+You may also optionally install fzf, which is included:
+   
+    $ ./fzf/install
     
 Once installation is complete, ~/.vim may be treated as a regular git
 repository, and therefore updated as such.  The zshrc file included in the
