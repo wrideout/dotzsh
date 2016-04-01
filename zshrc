@@ -129,3 +129,5 @@ if [ -f ~/.zsh_local ]; then
     source ~/.zsh_local
 fi
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
