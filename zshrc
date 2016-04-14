@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # vim command line editing
-# bindkey -v
+bindkey -v
 
 # Reduce the lag between modes
 export KEYTIMEOUT=1
