@@ -9,7 +9,7 @@ following:
     $ mv ~/.zshenv ~/.zshenv_old
     $ mv ~/.zsh ~/.zsh_old
 
-Execute the following commands in order to install to your ~/.vim file:
+Execute the following commands in order to install to your ~/.zsh file:
 
     # Install the git repository
     $ git clone --recursive git://github.com/wrideout/dotzsh.git ~/.zsh
@@ -22,7 +22,7 @@ You may also optionally install fzf, which is included:
    
     $ ./fzf/install
     
-Once installation is complete, ~/.vim may be treated as a regular git
+Once installation is complete, ~/.zsh may be treated as a regular git
 repository, and therefore updated as such.  The zshrc file included in the
 repository has the option of sourcing a local configuration file, named
 ".zshrc_local", if the file exists in the user's home directory.  This is for
