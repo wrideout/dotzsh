@@ -24,14 +24,15 @@ export ZSH=$HOME/.oh-my-zsh
 # antigen bundle brew
 # antigen bundle osx
 # antigen theme robbyrussell
-# antigen apply
+# antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+antigen apply
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="spaceship"
-# ZSH_THEME="dracula"
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -113,10 +114,10 @@ bindkey "^R" history-incremental-search-backward
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#alias ls='ls --color=auto'
+alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a' 
-alias ll='ls -l' 
+alias lt='ls -lhtr'
 alias lla='ls -l -a' 
 alias llh='ls -l -h' 
 alias lls='ls -l -S'
@@ -131,6 +132,8 @@ if [ -f ~/.zsh_local ]; then
 fi
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
